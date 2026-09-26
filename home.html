@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaviGear — Gear Up. Game On.</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        body {
+            background: linear-gradient(
+                to right,
+                #0a0e3f,
+                #1f2a9f,
+                #0a0e3f
+            );
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- Navigation -->
+
+    <header>
+        <hgroup>
+            <nav id="horizontal">
+
+                <a href="home.html" class="nav-logo-link">
+                    <img src="images/ban.png" class="nav-logo" alt="NaviGear">
+                </a>
+
+                <form class="nav-search" action="products.html" method="GET">
+                    <input
+                        type="text"
+                        name="search"
+                        placeholder="Search for products…"
+                        aria-label="Search products">
+                    <button type="submit" aria-label="Search">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2.5"
+                             stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                    </button>
+                </form>
+
+                <div class="nav-links">
+                    <a href="home.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="account.html" class="nav-account-btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2.5"
+                             stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                        Account
+                    </a>
+                </div>
+
+            </nav>
+        </hgroup>
+    </header>
+
+    <nav class="page-navigation">
+        <a href="#bottom">↓ Skip to Bottom</a>
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero-section">
+        <div class="hero-inner">
+
+            <span class="hero-badge">🎮 New Arrivals Available Now</span>
+
+            <h1 class="hero-title">
+                Upgrade Your<br>
+                <span>Gaming Setup</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Discover premium laptop and gaming accessories
+                built for study, work, and play — all in one place.
+            </p>
+
+            <div class="hero-cta">
+                <a href="products.html" class="btn-primary">Shop Now →</a>
+                <a href="about.html"    class="btn-outline">Learn More</a>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <span class="hero-stat-value">200+</span>
+                    <span class="hero-stat-label">Products</span>
+                </div>
+                <div>
+                    <span class="hero-stat-value">1,200+</span>
+                    <span class="hero-stat-label">Happy Customers</span>
+                </div>
+                <div>
+                    <span class="hero-stat-value">14</span>
+                    <span class="hero-stat-label">Categories</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Trust Bar -->
+
+    <div class="trust-bar">
+        <div class="trust-bar-inner">
+            <div class="trust-item">
+                <span class="trust-icon">🚚</span>
+                <span>Free Delivery on ₱1,500+</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">🔒</span>
+                <span>Secure Payments</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">↩️</span>
+                <span>Easy Returns</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">🎧</span>
+                <span>24/7 Customer Support</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Intro Text -->
+
+    <p class="intro-text">
+        NaviGear provides gaming and laptop accessories
+        designed to improve your setup, comfort,
+        and overall experience.
+    </p>
+
+
+    <!-- Shop By Category -->
+
+    <section class="categories-section">
+
+        <div class="section-header">
+            <h2 class="section-title">Shop by Category</h2>
+            <a href="products.html" class="section-view-all">View All →</a>
+        </div>
+
+        <div class="category-grid">
+            <a href="keyboard.html"  class="category-card">
+                <span class="category-icon">⌨️</span>
+                <span>Keyboards</span>
+            </a>
+            <a href="mouse.html"     class="category-card">
+                <span class="category-icon">🖱️</span>
+                <span>Gaming Mouse</span>
+            </a>
+            <a href="headset.html"   class="category-card">
+                <span class="category-icon">🎧</span>
+                <span>Headsets</span>
+            </a>
+            <a href="stand.html"     class="category-card">
+                <span class="category-icon">💻</span>
+                <span>Laptop Stand</span>
+            </a>
+            <a href="mousepad.html"  class="category-card">
+                <span class="category-icon">🟦</span>
+                <span>Mousepad</span>
+            </a>
+            <a href="docker.html"    class="category-card">
+                <span class="category-icon">🔌</span>
+                <span>Docking Station</span>
+            </a>
+            <a href="speaker.html"   class="category-card">
+                <span class="category-icon">🔊</span>
+                <span>Speakers</span>
+            </a>
+            <a href="webcam.html"    class="category-card">
+                <span class="category-icon">📷</span>
+                <span>Webcam</span>
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Featured Products -->
+
+    <section class="featured-section">
+
+        <div class="section-header">
+            <h2 class="section-title">Featured Gear</h2>
+            <a href="products.html" class="section-view-all">View All Products →</a>
+        </div>
+
+        <div class="products-grid">
+
+            <!-- Docking Station -->
+            <article class="product-card">
+                <div class="product-card-img-wrap">
+                    <span class="product-card-badge badge-sale">-25%</span>
+                    <img src="images/docker/Dock1 (1).webp" alt="USB-C Docking Station">
+                </div>
+                <div class="product-card-body">
+                    <h3 class="product-card-name">USB-C Docking Station</h3>
+                    <div class="product-card-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(128)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="price-current">₱1,499</span>
+                        <span class="price-original">₱1,999</span>
+                        <span class="price-discount">-25%</span>
+                    </div>
+                    <a href="docker.html" class="product-card-btn">View Product</a>
+                </div>
+            </article>
+
+            <!-- WiFi Dongle -->
+            <article class="product-card">
+                <div class="product-card-img-wrap">
+                    <span class="product-card-badge badge-new">NEW</span>
+                    <img src="images/dongle/Wifi2 (3).webp" alt="USB WiFi Dongle">
+                </div>
+                <div class="product-card-body">
+                    <h3 class="product-card-name">USB WiFi Dongle</h3>
+                    <div class="product-card-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(84)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="price-current">₱349</span>
+                    </div>
+                    <a href="dongle.html" class="product-card-btn">View Product</a>
+                </div>
+            </article>
+
+            <!-- Laptop Stand -->
+            <article class="product-card">
+                <div class="product-card-img-wrap">
+                    <span class="product-card-badge badge-hot">HOT</span>
+                    <img src="images/stand/LPStand1 (1).webp" alt="Adjustable Laptop Stand">
+                </div>
+                <div class="product-card-body">
+                    <h3 class="product-card-name">Adjustable Laptop Stand</h3>
+                    <div class="product-card-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(213)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="price-current">₱799</span>
+                        <span class="price-original">₱999</span>
+                        <span class="price-discount">-20%</span>
+                    </div>
+                    <a href="stand.html" class="product-card-btn">View Product</a>
+                </div>
+            </article>
+
+            <!-- Laptop Sleeve -->
+            <article class="product-card">
+                <div class="product-card-img-wrap">
+                    <img src="images/sleeve/Sleeve1 (1).webp" alt="Laptop Sleeve">
+                </div>
+                <div class="product-card-body">
+                    <h3 class="product-card-name">Laptop Sleeve</h3>
+                    <div class="product-card-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(67)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="price-current">₱299</span>
+                    </div>
+                    <a href="sleeve.html" class="product-card-btn">View Product</a>
+                </div>
+            </article>
+
+            <!-- Docking Station v2 -->
+            <article class="product-card">
+                <div class="product-card-img-wrap">
+                    <span class="product-card-badge badge-sale">-15%</span>
+                    <img src="images/docker/Dock3 (1).webp" alt="7-in-1 Hub">
+                </div>
+                <div class="product-card-body">
+                    <h3 class="product-card-name">7-in-1 USB Hub</h3>
+                    <div class="product-card-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(95)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="price-current">₱849</span>
+                        <span class="price-original">₱999</span>
+                        <span class="price-discount">-15%</span>
+                    </div>
+                    <a href="docker.html" class="product-card-btn">View Product</a>
+                </div>
+            </article>
+
+            <!-- Laptop Stand v2 -->
+            <article class="product-card">
+                <div class="product-card-img-wrap">
+                    <span class="product-card-badge badge-new">NEW</span>
+                    <img src="images/stand/LPStand3 (1).webp" alt="Foldable Laptop Stand">
+                </div>
+                <div class="product-card-body">
+                    <h3 class="product-card-name">Foldable Laptop Stand</h3>
+                    <div class="product-card-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(41)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="price-current">₱649</span>
+                    </div>
+                    <a href="stand.html" class="product-card-btn">View Product</a>
+                </div>
+            </article>
+
+            <!-- WiFi Dongle v2 -->
+            <article class="product-card">
+                <div class="product-card-img-wrap">
+                    <img src="images/dongle/Wifi4 (1).webp" alt="AC1300 WiFi Adapter">
+                </div>
+                <div class="product-card-body">
+                    <h3 class="product-card-name">AC1300 WiFi Adapter</h3>
+                    <div class="product-card-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(156)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="price-current">₱599</span>
+                        <span class="price-original">₱799</span>
+                        <span class="price-discount">-25%</span>
+                    </div>
+                    <a href="dongle.html" class="product-card-btn">View Product</a>
+                </div>
+            </article>
+
+            <!-- Laptop Sleeve v2 -->
+            <article class="product-card">
+                <div class="product-card-img-wrap">
+                    <span class="product-card-badge badge-hot">HOT</span>
+                    <img src="images/sleeve/Sleeve3 (1).webp" alt="Water-Resistant Sleeve">
+                </div>
+                <div class="product-card-body">
+                    <h3 class="product-card-name">Water-Resistant Sleeve</h3>
+                    <div class="product-card-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(188)</span>
+                    </div>
+                    <div class="product-card-price">
+                        <span class="price-current">₱449</span>
+                        <span class="price-original">₱549</span>
+                        <span class="price-discount">-18%</span>
+                    </div>
+                    <a href="sleeve.html" class="product-card-btn">View Product</a>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Featured Article -->
+
+    <article class="featured-article">
+
+        <h2>Essential Gaming Accessories</h2>
+
+        <p>
+            Upgrade your gaming setup with reliable
+            accessories such as gaming mice,
+            keyboards, headsets, cooling pads,
+            and laptop stands.
+        </p>
+
+    </article>
+
+
+    <!-- Promo Slideshow -->
+
+    <section class="promo-section">
+
+        <div class="section-heading">
+
+            <h2>Featured Promotions</h2>
+
+            <p>
+                Check out some of our highlighted
+                gaming and laptop accessories.
+            </p>
+
+        </div>
+
+        <aside class="promo-box">
+
+            <iframe
+                src="promo.html"
+                title="NaviGear Featured Promotion">
+            </iframe>
+
+        </aside>
+
+    </section>
+
+
+    <!-- Expanding Offer Card -->
+
+    <section class="expand-offer">
+        <div class="expand-card">
+            <h3>Limited NaviGear Offer</h3>
+            <p class="expand-short">Hover to view more details.</p>
+            <div class="expand-details">
+                Save on selected gaming and laptop accessories.
+                Browse featured gear and upgrade your setup.
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Promo Video -->
+
+    <section class="video-section">
+
+        <div class="section-heading">
+            <h2>Gear Up. Go Further.</h2>
+            <p>Discover accessories built to upgrade your gaming and everyday setup.</p>
+        </div>
+
+        <video
+            id="adver"
+            autoplay
+            muted
+            loop
+            playsinline
+            controls
+            aria-label="NaviGear advertisement">
+            <source src="images/adss.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+
+    </section>
+
+
+    <!-- Why Navigear -->
+
+    <section class="why-section">
+
+        <div class="section-header">
+            <h2 class="section-title">Why Choose NaviGear?</h2>
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <span class="why-icon">🏆</span>
+                <h3>Quality Products</h3>
+                <p>Curated accessories chosen for performance, durability, and value.</p>
+            </div>
+
+            <div class="why-card">
+                <span class="why-icon">💰</span>
+                <h3>Best Prices</h3>
+                <p>Competitive pricing on all gaming and laptop accessories.</p>
+            </div>
+
+            <div class="why-card">
+                <span class="why-icon">🚀</span>
+                <h3>Fast Delivery</h3>
+                <p>Quick and reliable shipping to anywhere in the Philippines.</p>
+            </div>
+
+            <div class="why-card">
+                <span class="why-icon">💬</span>
+                <h3>Expert Support</h3>
+                <p>Our team is ready to help you find the right gear for your setup.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Music Section -->
+
+    <section class="music-section">
+
+        <div class="section-heading">
+            <h2>NaviGear Gaming Vibes</h2>
+            <p>Enjoy some music while browsing our gaming accessories.</p>
+        </div>
+
+        <audio controls>
+            <source src="audio/music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+    </section>
+
+
+    <!-- Page Nav -->
+
+    <nav class="page-navigation">
+        <a href="#top">↑ Back to Top</a>
+    </nav>
+
+
+    <!-- Border Demo -->
+
+    <section class="border-demo">
+        <h2>NaviGear Featured Deal</h2>
+        <p>
+            Check out selected gaming and laptop accessories
+            available at special prices.
+        </p>
+    </section>
+
+
+    <!-- Text Art Signature -->
+
+    <section class="text-art-section">
+
+        <h3>NaviGear Signature</h3>
+
+        <pre class="navigear-art">
+ _   _             _  _____
+| \ | |           (_)/ ____|
+|  \| | __ ___   ___| |  __  ___  __ _ _ __
+| . ` |/ _` \ \ / / | | |_ |/ _ \/ _` | '__|
+| |\  | (_| |\ V /| | |__| |  __/ (_| | |
+|_| \_|\__,_| \_/ |_|\_____|\___|\__,_|_|
+
+             Gear Up. Game On.
+        </pre>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="site-footer" id="bottom">
+
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <img src="images/ban.png" alt="NaviGear" class="footer-logo">
+                <p class="footer-tagline">
+                    Your go-to destination for laptop and gaming accessories.
+                    Gear Up. Game On.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="home.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="account.html">My Account</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <a href="keyboard.html">Keyboards</a>
+                <a href="mouse.html">Gaming Mouse</a>
+                <a href="headset.html">Headsets</a>
+                <a href="stand.html">Laptop Stand</a>
+                <a href="products.html">View All →</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="footer-contact-item">
+                    <span class="footer-contact-icon">✉</span>
+                    <span>navigear@gmail.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="footer-contact-icon">📞</span>
+                    <span>0910-939-0360</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="footer-contact-icon">📍</span>
+                    <span>Sto. Tomas, Batangas</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 NaviGear. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

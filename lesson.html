@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #09133d, #1c2d7a, #0a0e3f);
+            color: #edf9ff;
+            margin: 20px;
+        }
+
+        figure#front-stack {
+            float:left; margin-top: 0px;
+        }
+        figure#back-stack {
+            float:right; margin-top: 0px;
+        }
+        .reference {
+            color:red; font-weight:bold;
+        }
+        p:first-letter {
+            font-size:xx-large;
+        }
+
+        fieldset {
+            border: 1px solid #5aecff;
+            border-radius: 12px;
+            background: rgba(10, 14, 63, 0.7);
+            padding: 16px 18px;
+            margin: 20px 0;
+            color: #edf9ff;
+        }
+
+        legend {
+            color: #5aecff;
+            font-weight: 600;
+            padding: 0 8px;
+        }
+
+        .choice-list,
+        .radio-list,
+        .form-actions,
+        .color-actions {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .choice-item,
+        .radio-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.06);
+            color: #edf9ff;
+            font-weight: 500;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            accent-color: #5aecff;
+            width: 16px;
+            height: 16px;
+            margin: 0;
+        }
+
+        .action-btn,
+        button {
+            border: none;
+            border-radius: 10px;
+            padding: 10px 18px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+        }
+
+        .action-btn:hover,
+        button:hover {
+            transform: translateY(-1px);
+        }
+
+        input[type="submit"],
+        .primary-btn,
+        button[type="submit"] {
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            color: white;
+        }
+
+        input[type="reset"],
+        .reset-btn,
+        button[type="reset"] {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+        }
+
+        #btn,
+        .secondary-btn,
+        button[type="button"] {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+        }
+
+        .form-actions {
+            margin: 18px 0;
+        }
+
+        .color-actions {
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <audio controls autoplay>
+        <source src="audio/music.mp3" type="audio/mpeg">
+
+        <source src="audio.ogg" type="audio/ogg">
+    </audio>
+
+    <article class="left200">
+        <h3>Concept Cars</h3>
+        <p>Many of the creaative and innovative cars premiered at the recent motor show.</p>
+    </article>
+
+    <aside>
+        <iframe src="images/NaviGear.png" width="250" height="200"></iframe>
+    </aside>
+
+    <h1>Web Development Stacks</h1>
+
+    <figure id="front-stack">
+        <img src="images/NaviGear.png" alt="Front-end" widht="100" height="100">
+        <figcaption class="reference">Figure 1:Font-End TEchnologies</figcaption>
+    </figure>
+    <p>Front end development, also known as client-side development.</p>
+
+    <figure id="nack-stack">
+        <img src="images/NaviGear.png" alt="Back-end" width="100" height="100">
+        <figcaption class="reference">Figure 2:Back-end Technologies</figcaption>
+    </figure>
+    <p>Back-end devlopment, also known as server-side development. Yumburger and mango float</p>
+
+
+    <img src="images/NaviGear.png" width="200px" alt="Search" usemap="#search">
+
+      <map name="search">
+    <area shape="rect" coords="0,0,200,100" href="images/NaviGear.png" alt="Bing Panel" title="Link to Bing">
+    <area shape="rect" coords="200,0,400,100" href="https://www.google.com" alt="Ask Panel" title="Link to Ask">
+    <area shape="rect" coords="0,100,200,200" href="images/NaviGear.png" alt="Google Panel" title="Link to Google">
+    <area shape="rect" coords="200,100,400,200" href="images/NaviGear.png" alt="Yahoo Panel" title="Link to Yahoo">
+  </map><br>
+
+  <object data="c:\Users\johna\Downloads\VILLAPLANA-A1.pdf" type="application/pdf" width="500" height="500">
+    [ PDF Document - May Require Adobe Readder Plugin]
+  </object>
+
+    <fieldset>
+        <legend>Pizza Toppings</legend>
+        <div class="choice-list">
+            <label class="choice-item"><input id="pepperoni" type="checkbox" name="Toppings" value="Pepperoni"> Pepperoni</label>
+            <label class="choice-item"><input id="bbqsauce" type="checkbox" name="Toppings" value="BBQ"> BBQ</label>
+            <label class="choice-item"><input id="pepperoni2" type="checkbox" name="Toppings" value="Pepperoni"> Cheese</label>
+        </div>
+    </fieldset>
+
+    <div class="form-actions">
+        <input class="action-btn reset-btn" type="reset" value="Reset Form">
+        <input class="action-btn secondary-btn" id="btn" type="button" value="Choose Form">
+        <input class="action-btn primary-btn" type="submit" value="Submit Form">
+    </div>
+
+    <script>
+        ( function () {
+            const pep = document.getElementById( 'pepperoni');
+            const btn = document.getElementById( 'btn');
+
+            btn.addEventListener('click', function () { pep.checked = true; });
+        })();
+    </script>
+
+    <fieldset>
+        <legend>Send Options</legend>
+        <div class="choice-list">
+            <label class="choice-item"><input type="checkbox" name="Send" value="Details"> Send details</label>
+            <label class="choice-item"><input type="checkbox" name="Send" value="Prices"> Send prices</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+    <legend>What kind of language is HTML?</legend>
+    <div class="radio-list">
+        <label class="radio-item"><input type="radio" name="Definition" value="Scripting"> Scripting</label>
+        <label class="radio-item"><input type="radio" name="Definition" value="Markup"> Markup</label>
+        <label class="radio-item"><input type="radio" name="Definition" value="Programming" checked> Programming</label>
+    </div>
+    </fieldset>
+
+    <p>
+    <input type="submit">
+    </p>
+
+    </form>
+    <form method="GET" action="http://localhost/echo.py" oninput="sum.value=multiply(qty, price)">
+    Qty (60 available)
+    <input type="number" id="qty" name="quantity" min="1" max="60">
+    <input type="hidden" id="price" name="Unit price" value="24.99">
+    <output name="sum" for="qty price"></output><br>
+
+    <input type="submit" name="Offer" value="buy teady bears">
+    </form>
+    <script>
+        function multiply(q, p){
+            let result = parseFloat(q.value) * parseFloat(p.value)
+            if (isNaN(result) || result < 1 ) return ' '
+            else 
+            return 'Total: $' + result.toFixed(2)
+        }
+    </script> 
+
+<form id="myForm" method="GET" action="http://localhost/echo.py">
+Please Supply Your Email Address:
+<input id="adr" name="Address" type="text" size="45"> <br>
+
+<input type="image" src="ibutton.png" alt="Submit Button" title="Click to submit form">
+<img id="emailBtn" src="ibutton.png" alt="Submit Button" title="Click to submit with JavaScript validation">
+
+</form>
+
+<script>
+
+( function () {
+
+    const myForm = document.getElementById( 'myForm' )
+    const pattern = /^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+
+    myForm.addEventListener( 'submit', function ( event ) {
+        const adr = document.getElementById( 'adr' ).value
+
+        if ( ! pattern.test( adr ) ) {
+            event.preventDefault( )
+            alert( 'Invalid Email Address' )
+        }
+    } )
+
+} )()
+
+</script>
+
+
+    <fieldset>
+        <legend>Favorite Color</legend>
+        <div class="color-actions">
+            <input type="text" name="color" aria-label="Favorite color" style="padding: 10px 12px; border-radius: 8px; border: 1px solid #5aecff; background: rgba(255,255,255,0.08); color: #fff; min-width: 180px;">
+            <button type="button" onclick="alert('enter your favorite color')">Help</button>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </fieldset>
+
+    <select name="HTML List Type Selector One" size="4">
+        <optgroup label="HTML List Type Selector One">
+            <option value="Ordered List">Ordered List</option>
+            <option value="Unordered List">Unordered List</option>
+            <option value="Description List">Description List</option>
+        </optgroup>
+    </select>
+
+    <select name="HTML List Type Selector Two" size="4">
+        <optgroup label="HTML List Type Selector Two">
+            <option value="Ordered List">Ordered List</option>
+            <option value="Unordered List">Unordered List</option>
+            <option value="Description List">Description List</option>
+        </optgroup>
+    </select>
+    
+    <form method="POST" action="http://localhost/echo.py">
+
+    <textarea name="The Future Web" rows="8" cols="70">
+    Heard of XHTML? The W3C produced a specification to combine the vocabulary of HTML with the syntax of XML.
+    The Living Standard for web content is HTML!
+    </textarea>
+
+    <p>
+    <input type="submit" value="Submit Form">
+    </p>
+
+    <form method="GET" action="http://localhost/echo.py">
+        <dl>
+            <dt>User Name:
+            <dd><input type="text" name="Name">
+            <dt>Password:
+            <dd><input type="password" name="Password">
+            <dt>Zip Code:
+            <dd><input type="text" name="Zip" size="5" maxlength="5">
+        </dl>
+    
+    <input type="submit" value="Sender">
+    </form>
+
+    <form method="POST" action="http://localhost/echo.py" enctype="multipart/form-data">
+        <label for="file">Select a file:</label>
+        <input type="file" id="file" name="file">
+        <br>
+        <input type="submit" value="Upload">
+
+</body>
+</html>                                                                                                                                                                                   

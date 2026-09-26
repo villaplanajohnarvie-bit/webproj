@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - NaviGear</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        body {
+            background: linear-gradient(
+                to right,
+                #0a0e3f,
+                #1f2a9f,
+                #0a0e3f
+            );
+        }
+
+        #vertical1 a {
+            color: #f3fdff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- Navigation -->
+
+    <header>
+        <hgroup>
+            <nav id="horizontal">
+
+                <a href="home.html" class="nav-logo-link">
+                    <img src="images/ban.png" class="nav-logo" alt="NaviGear">
+                </a>
+
+                <form class="nav-search" action="products.html" method="GET">
+                    <input type="text" name="search" placeholder="Search for products…" aria-label="Search products">
+                    <button type="submit" aria-label="Search">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                    </button>
+                </form>
+
+                <div class="nav-links">
+                    <a href="home.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="account.html" class="nav-account-btn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                        </svg>
+                        Account
+                    </a>
+                </div>
+
+            </nav>
+        </hgroup>
+    </header>
+
+    <nav class="page-navigation">
+        <a href="#bottom">↓ Skip to Bottom</a>
+    </nav>
+
+    <main>
+
+        <!-- Contact Info Row -->
+
+        <section class="contact-row">
+
+            <section id="rene">
+
+                <h1>Need Help?</h1>
+
+                <p>
+                    Need assistance with your order, product, or website experience?
+                    Visit our Help Center, report an issue, or send us your feedback.
+                    We're here to help.
+                </p>
+
+                <h2>Feedback</h2>
+
+                <p>
+                    We value your feedback! Share your thoughts and suggestions to help
+                    us improve NaviGear and provide a better experience for our customers.
+                </p>
+
+            </section>
+
+            <aside id="contact-aside">
+                <nav id="vertical1">
+
+                    <h2>Contact Information</h2>
+
+                    <p>
+                        <b>Email:</b><br>
+                        <a href="mailto:navigear@gmail.com">navigear@gmail.com</a>
+                    </p>
+
+                    <p>
+                        <b>Phone:</b><br>
+                        0910-939-0360
+                    </p>
+
+                    <p>
+                        <b>Facebook:</b><br>
+                        NaviGear
+                    </p>
+
+                    <p>
+                        <b>Location:</b><br>
+                        Sto. Tomas, Batangas
+                    </p>
+
+                </nav>
+            </aside>
+
+        </section>
+
+
+        <!-- Feedback Form -->
+
+        <form class="contact-form">
+
+            <fieldset>
+
+                <legend>Your Information</legend>
+
+                <label for="name">Name:</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name">
+
+                <br><br>
+
+                <label for="email">Email Address:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com">
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>What part of NaviGear are you reviewing?</legend>
+
+                <label for="review-page">Select a page:</label>
+
+                <select id="review-page" name="reviewPage">
+
+                    <optgroup label="NaviGear Pages">
+                        <option value="">Choose a page</option>
+                        <option value="Home">Home</option>
+                        <option value="Products">Products</option>
+                        <option value="About">About</option>
+                        <option value="Contact">Contact</option>
+                        <option value="Account">Account</option>
+                    </optgroup>
+
+                </select>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>How was your experience with NaviGear?</legend>
+
+                <label class="check-option" for="easy">
+                    <input
+                        type="checkbox"
+                        id="easy"
+                        name="siteReview"
+                        value="Easy to Navigate">
+                    <span>Easy to Navigate</span>
+                </label>
+
+                <label class="check-option" for="design">
+                    <input
+                        type="checkbox"
+                        id="design"
+                        name="siteReview"
+                        value="Good Website Design">
+                    <span>Good Website Design</span>
+                </label>
+
+                <label class="check-option" for="useful">
+                    <input
+                        type="checkbox"
+                        id="useful"
+                        name="siteReview"
+                        value="Useful Information">
+                    <span>Useful Information</span>
+                </label>
+
+                <label class="check-option" for="organized">
+                    <input
+                        type="checkbox"
+                        id="organized"
+                        name="siteReview"
+                        value="Well Organized">
+                    <span>Well Organized</span>
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Overall, how would you rate NaviGear?</legend>
+
+                <label class="check-option" for="excellent">
+                    <input
+                        type="radio"
+                        id="excellent"
+                        name="rating"
+                        value="Excellent">
+                    <span>Excellent</span>
+                </label>
+
+                <label class="check-option" for="good">
+                    <input
+                        type="radio"
+                        id="good"
+                        name="rating"
+                        value="Good">
+                    <span>Good</span>
+                </label>
+
+                <label class="check-option" for="average">
+                    <input
+                        type="radio"
+                        id="average"
+                        name="rating"
+                        value="Average">
+                    <span>Average</span>
+                </label>
+
+                <label class="check-option" for="needs-improvement">
+                    <input
+                        type="radio"
+                        id="needs-improvement"
+                        name="rating"
+                        value="Needs Improvement">
+                    <span>Needs Improvement</span>
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Tell us more about your experience</legend>
+
+                <label for="comments">Additional Feedback:</label>
+
+                <textarea
+                    id="comments"
+                    name="comments"
+                    rows="6"
+                    placeholder="Share your suggestions or comments here..."></textarea>
+
+            </fieldset>
+
+            <fieldset>
+
+                <label for="file">
+                    Attach an image or file related to your concern:
+                </label>
+
+                <input
+                    type="file"
+                    id="file"
+                    name="file">
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Communication Preferences</legend>
+
+                <label class="check-option">
+                    <input
+                        type="checkbox"
+                        name="updates"
+                        value="Product Updates">
+                    <span>Send me product updates</span>
+                </label>
+
+                <label class="check-option">
+                    <input
+                        type="checkbox"
+                        name="updates"
+                        value="Promotions">
+                    <span>Send me promotions and special offers</span>
+                </label>
+
+            </fieldset>
+
+            <div class="form-actions">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit Feedback">
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <!-- Navigation -->
+
+    <nav class="page-navigation">
+        <a href="#top">↑ Back to Top</a>
+    </nav>
+
+
+    <!-- Footer -->
+
+    <footer class="site-footer" id="bottom">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="images/ban.png" alt="NaviGear" class="footer-logo">
+                <p class="footer-tagline">Your go-to destination for laptop and gaming accessories. Gear Up. Game On.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="home.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="account.html">My Account</a>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <a href="keyboard.html">Keyboards</a>
+                <a href="mouse.html">Gaming Mouse</a>
+                <a href="headset.html">Headsets</a>
+                <a href="stand.html">Laptop Stand</a>
+                <a href="products.html">View All →</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="footer-contact-item">
+                    <span class="footer-contact-icon">✉</span>
+                    <span>navigear@gmail.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="footer-contact-icon">📞</span>
+                    <span>0910-939-0360</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span class="footer-contact-icon">📍</span>
+                    <span>Sto. Tomas, Batangas</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NaviGear. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

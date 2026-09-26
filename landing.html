@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="6; url=home.html">
+    <title>Landing</title>
+    <style>
+        #navi {
+        display: block;
+
+        width: 280px;
+        max-width: 65%;
+
+        margin: 0 auto 20px;
+
+        border-radius: 15px;
+
+        filter: drop-shadow(
+            0 0 35px rgba(41, 98, 255, 0.7)
+        );
+        }
+
+        body {
+        background: radial-gradient(
+        circle at center,
+        #1900bd 0%,
+        #06064d 60%,
+        #00042d 100%
+        );
+
+        margin: 0;
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+        #mess {
+        color: white;
+
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 2.7rem;
+        font-weight: 600;
+
+        letter-spacing: 1px;
+        text-align: center;
+
+        margin: 5px 20px 0;
+        text-shadow: 0 0 20px rgba(41, 98, 255, 0.6);
+        }
+
+        #tagline {
+        color: #8feeff;
+
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 1.05rem;
+        font-weight: 500;
+
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 10px 20px 0;
+        }
+
+        #continue {
+        display: block;
+        width: fit-content;
+        margin: 25px auto 20px auto;
+        padding: 12px 30px;
+
+        color: white;
+        background-color: #1d3fff;
+
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+
+        border-radius: 8px;
+
+        box-shadow: 0 0 15px rgba(41, 98, 255, 0.6);
+        }
+
+        #continue:hover {
+        background-color: #4a63ff;
+        }
+
+        #description {
+        color: #b9c5ef;
+
+        font-family: "Segoe UI", Arial, sans-serif;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+
+        max-width: 520px;
+        margin: 18px 25px;
+        }
+        
+        #redirect {
+        text-align: center;
+        color: #7889c9;
+        font-family: Arial, sans-serif;
+        font-size: 0.8rem;
+        margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/NaviGear.png" id="navi">
+
+    <h1 id="mess">Welcome to NaviGear</h1>
+    <p id="tagline">Your gear. Your setup. Elevated.</p>
+    <p id="description">
+    Discover essential laptop and gaming accessories designed to upgrade your setup.
+    </p>
+    <a href="home.html" id="continue">Continue</a>
+
+     <p id="redirect">
+        Entering NaviGear automatically...
+    </p>
+    <footer>
+        <p>&copy; 2026 NaviGear. All rights reserved.</p>
+    </footer>
+</body>
+</html>
